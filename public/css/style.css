@@ -1,0 +1,47 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.game_window {
+  background-color: aqua;
+  width: 100%;
+  height: 839px;
+}
+
+.hangman {
+  width: 400px;
+  height: 466px;
+}
+
+.hangarea {
+  background-color: red;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  background-color: green;
+}
+
+.hangwordzone {
+  display: flex;
+  flex-direction: row;
+}
+
+.wordarea {
+  width: 100%;
+  height: 466px;
+  background-color: pink;
+  display: flex;
+  justify-content: end;
+}
