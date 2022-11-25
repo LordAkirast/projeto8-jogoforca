@@ -1,6 +1,8 @@
+import {useState} from 'react';
+
 export default function App() {
     const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-
+    const [clicked, setclicked] = useState(false);
 
     return (
         <>
@@ -17,7 +19,7 @@ export default function App() {
             <footer className='footer'>
                 <div className='words'>
                     {/* <div className='letters'></div> */}
-                    {alphabet.map((a) => (<p className="letter">{a.toUpperCase()}</p>))}
+                    {alphabet.map((a) => (<p key={a} onClick={clickedLetter} className={clicked ? 'letterClicked' : 'letter'}>{a.toUpperCase()}</p>))}
                 </div>
                 <div className='guess'>guess</div>
 
@@ -26,4 +28,9 @@ export default function App() {
         </>
 
     )
+
+function clickedLetter () {
+    setclicked(current => !current);
+    
+}
 }

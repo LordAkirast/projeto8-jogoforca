@@ -87,3 +87,7 @@ code {
   margin-bottom: 12px;
   text-align: center;
 }
+
+.letterClicked {
+  background-color: green;
+}
