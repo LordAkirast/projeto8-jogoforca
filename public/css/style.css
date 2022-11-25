@@ -53,6 +53,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .words {
@@ -60,9 +61,9 @@ code {
   width: 650px;
   background-color: red;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .letters {
@@ -75,4 +76,14 @@ code {
   height: 40px;
   width: 624px;
   background-color: tomato;
+}
+
+.letter {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 12px;
+  text-align: center;
 }
